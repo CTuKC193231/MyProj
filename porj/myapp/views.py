@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from myapp.models import Books, category, product
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate  
 # Create your views here.
 
 def index(request):
