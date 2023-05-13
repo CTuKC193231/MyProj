@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {{req}}
+  {% for i in prod %}
+  {{i.id}}
+  {{i.cat_id}}
+  {{i.product}}
+  <img src = '{% static i.pic|cut:"myapp/static" %}' alt="">
+  {% endfor %}
+
+<style>
+  .pic{
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  </style>
+</body>
+</html>
